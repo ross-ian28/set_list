@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+@ggd = Artist.create!(name: "Goo Goo Dolls")
+@iris = @ggd.songs.create!(title: 'Iris', length: 345, play_count: 8989)
+@atya = @ggd.songs.create!(title: 'All that you are', length: 245, play_count: 583)

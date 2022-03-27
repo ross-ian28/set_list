@@ -1,0 +1,4 @@
+<% @songs.each do |song| %>
+  <p><%= link_to song.title, "/songs/#{song.id}" %></p>
+<% end %>
+<p>Average Song Length for <%= @artist.name %>: <%= @artist.average_song_length %></p>
